@@ -1,0 +1,27 @@
+@keyframes han{
+    0%{
+        transform: scaleY(1);
+    }
+    50%{
+        transform:scaleY(2) ;
+    }
+  100%{
+    transform: scaleY(1);
+  } 
+}
+$var:0.1s;
+.box div{
+    display:inline-block;
+    width: 10px;
+    height: 50px;
+    background:#0af;
+    margin: 5px;
+    transform-origin:top;
+    @for $i from 1 to 27{
+        &:nth-of-type(#{$i}){
+            animation:han 1s infinite $var;
+            animation-timing-function:linear ;
+        }
+        $var:$var+0.1;
+    }
+}

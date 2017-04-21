@@ -1,0 +1,49 @@
+.big_box{
+    width: 1030px;
+    height: 824px;
+    text-align: center;
+    border: 1px solid #000;
+    margin: 0 auto;
+}
+
+
+.box{
+    width: 200px;
+    height: 200px;
+    line-height: 200px;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    border: 1px solid #000;
+    float: left;
+    margin: 2px;
+    
+    &:nth-child( 6 ){
+        margin-left: 826px;
+    }
+    &:nth-child( 7 ){
+        margin-left: 826px;
+    }
+    &:nth-child( 8 ){
+        float: right;
+        margin-right: 2px ;
+    }
+    &:nth-child( 9 ){
+        float: right;
+    } 
+    &:nth-child( 10 ){
+        float: right;
+    } 
+    &:nth-child( 11 ){
+        float: right;
+    } 
+    &:nth-child( 12 ){
+        float: right;
+    }
+    &:nth-child( 13 ){
+        margin-top: -410px;
+    }
+    &:nth-child( 14 ){
+        margin-top: -616px;
+    }
+}
